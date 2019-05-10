@@ -47,6 +47,11 @@
                     </div>
                   </div>
                 <% end %>
+                  <li button class=pull-right>
+                    <%if @user.avatar.attached?%>
+                      <%= image_tag @user.avatar, alt: 'avatar' %>
+                    <%end%>
+                  </li>
               </li>
             </ul>
           </div>
